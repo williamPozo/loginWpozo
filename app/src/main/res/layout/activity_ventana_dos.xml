@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ventanaDos">
+
+    <TextView
+        android:id="@+id/tvUisrael"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:layout_marginBottom="62dp"
+        android:text="@string/tvUisrael"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitulo2"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/cbSistemas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUisrael"
+        tools:text="@string/tvTitulo2" />
+
+    <CheckBox
+        android:id="@+id/cbSistemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/cbSistemas"
+        app:layout_constraintBottom_toTopOf="@+id/cbAdministracion"
+        app:layout_constraintStart_toStartOf="@+id/cbAdministracion"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo2"
+        tools:text="@string/cbSistemas" />
+
+    <CheckBox
+        android:id="@+id/cbAdministracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/cbAdministracion"
+        app:layout_constraintBottom_toTopOf="@+id/cbDiseño"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSistemas"
+        tools:text="@string/cbAdministracion" />
+
+    <CheckBox
+        android:id="@+id/cbDiseño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:text="@string/cbDiseño"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo3"
+        app:layout_constraintStart_toStartOf="@+id/cbAdministracion"
+        app:layout_constraintTop_toBottomOf="@+id/cbAdministracion"
+        tools:text="@string/cbDiseño" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="123dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo3">
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/rbSI" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="215dp"
+            android:layout_height="28dp"
+            android:text="@string/rbNO" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTitulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="53dp"
+        android:text="@string/tvTitulo3"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/cbDiseño"
+        app:layout_constraintTop_toBottomOf="@+id/cbDiseño" />
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:onClick="resultado"
+        android:text="@string/btnResultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

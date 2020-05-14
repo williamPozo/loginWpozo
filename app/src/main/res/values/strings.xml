@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">loginWpozo</string>
+    <string name="etUsuario">INGRESE SU USUARIO</string>
+    <string name="etContraseña">INGRESE SU CONTRASEÑA</string>
+    <string name="btnAceptar">ACEPTAR</string>
+    <string name="tvLogin">LOGIN UISRAEL</string>
+
+    <string name="tvUisrael">UISRAEL</string>
+
+    <string name="tvTitulo2">¿Cual es su carrera?</string>
+    <string name="cbSistemas">Sistemas</string>
+    <string name="cbAdministracion">Administracion De Empresas</string>
+    <string name="cbDiseño">Diseño Grafico</string>
+
+    <string name="tvTitulo3">¿Esta Matriculado?</string>
+    <string name="rbSI">SI</string>
+    <string name="rbNO">NO</string>
+
+    <string name="btnResultado">Resultado</string>
+
+
+</resources>
